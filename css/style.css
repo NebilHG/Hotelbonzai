@@ -96,6 +96,15 @@ main{
    
 }
 
+.main_heading {
+    grid-area: heading;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: silver;
+}
 
 
 .main__pic1{
@@ -107,15 +116,7 @@ main{
    height: 100%; 
 }
 
-.main_heading {
-    grid-area: heading;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    font-size: xx-large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: silver;
-}
+
 
 .welcome{
     grid-area: welcome;
