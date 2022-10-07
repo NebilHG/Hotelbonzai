@@ -1,0 +1,644 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-image: url("/bonzai-assets/assets/photos/09-night.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    width: 100vw;
+    height: 100%;
+
+}
+
+:root {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main main main "
+    "footer footer footer footer footer footer";
+    
+   
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    background-color: black;
+    padding: 1rem;
+   
+
+}
+
+.header__logo{
+    max-width: 15rem;
+    
+    
+}
+
+.header__navi{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-around ;
+    gap: 5rem;
+}
+
+.header__navi__link{
+    color: aquamarine;
+    background-color: black;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 0.5rem 1rem;
+    
+    border-radius: 20px;
+}
+
+.header__navi__link:hover{
+    background-color: rgb(28, 26, 26);
+    color: silver;
+    box-shadow: 2px 2px 2px aquamarine;
+}
+
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "heading heading heading heading heading heading"
+    " main-pic1 main-pic1 main-pic1 welcome welcome welcome"
+    "expect expect expect  main-pic2 main-pic2 main-pic2 "
+    "main-pic3 main-pic3 main-pic3 explore explore explore"
+    "app app app appbutton appbutton appbutton"
+   ;
+    
+    
+    
+   
+}
+
+
+
+.main__pic1{
+    grid-area: main-pic1; 
+}
+
+.main__pic1__pic{
+   max-width: 100%;
+   height: 100%; 
+}
+
+.main_heading {
+    grid-area: heading;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: silver;
+}
+
+.welcome{
+    grid-area: welcome;
+    background-color: silver;
+    padding: 2rem;
+    
+}
+
+
+
+.expect{
+    grid-area: expect;
+    background-color: silver;
+    padding: 2rem;
+}
+
+.main__pic2{
+    grid-area: main-pic2;
+  
+}
+.main__pic2__pic{
+    max-width: 100%;
+    height: 100%; 
+   
+    
+}
+
+.explore{
+    grid-area: explore;
+    background-color: silver;
+    padding: 2rem;
+    
+
+}
+
+.main__pic3{
+    grid-area: main-pic3;
+    
+
+   
+}
+.main__pic3__pic{
+    max-width: 100%;
+    height: 100%; 
+}
+
+.main__app{
+    grid-area: app;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5rem;
+    
+    background-color: silver;
+    
+}
+
+
+.main__app-button{
+    grid-area: appbutton;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: silver;
+    
+    
+}
+
+.main__app-button__store{
+    background-color: black;
+    border-radius: 20px;
+    padding: .25rem 1rem .50rem 1rem;
+    border: none;
+}
+
+
+
+.main__app-button__store:hover{
+    
+    background-color: grey;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px aquamarine;
+   
+}
+
+.main__app-button__store a {
+    color: #eee;
+    text-decoration: none;
+}
+
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    background-image: url("/bonzai-assets/assets/photos/footer-map.png");
+    background-repeat: no-repeat;
+    padding: 2rem;
+    
+    
+    gap: 2rem;
+    
+}
+
+.footer__contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20rem;
+    background-color: silver;
+    padding: 0 10px 10px 10px;
+    border-radius: 20px;
+    
+}
+
+.footer__socials{
+    display: flex;
+    flex-direction: column;
+   background-color: silver;
+    align-items: center;
+    border-radius: 20px;
+    max-width: 20rem;
+}
+
+.footer__socials__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.footer__socials__items a{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    color: aquamarine;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.footer__socials__items a:hover{
+    background-color: grey;
+    color: white;
+    box-shadow: 2px 2px 2px aquamarine;
+}
+
+.footer__socials article{
+    color: black;
+    padding:  .5rem 1rem;
+    
+}
+
+.footer__logo{
+    max-width: 20rem;
+    background-color: black;
+    border-radius: 20px;
+    padding: 2rem;
+    
+}
+
+/*----------------------- About -----------------------*/
+.main-about{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+
+
+.rooms, .fitness , .dining{
+    
+    background-color: silver;
+    padding: 5rem;
+}
+
+.about-heading{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: silver;
+}
+
+
+.rooms img{
+    max-height: 15rem;
+    border: 12px solid whitesmoke;
+    margin: 1rem 1rem 0 1rem;
+    box-shadow: grey 10px 10px 10px;
+}
+
+
+
+.fitness img{
+    max-height: 20rem;
+    border: 12px solid whitesmoke;
+    margin: 1rem 1rem 0 1rem;
+    box-shadow: grey 10px 10px 10px;
+
+}
+
+
+.dining img{
+    max-height: 25rem;
+    
+    border: 12px solid whitesmoke;
+    margin: 1rem 1rem 0 1rem;
+    box-shadow: grey 10px 10px 10px;
+}
+
+.about__app{
+    
+    display: grid;
+
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "app app app appbutton appbutton appbutton";
+}
+.about__app-text{
+    grid-area: app;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5rem;
+    
+    background-color: silver;
+    
+}
+
+
+.about__app-button{
+    grid-area: appbutton;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: silver;
+    
+}
+
+.about__app-button__store{
+    background-color: black;
+    border-radius: 20px;
+    padding: .25rem 1rem .50rem 1rem;
+
+     
+    
+}
+
+
+
+.about__app-button__store:hover{
+    
+    background-color: grey;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px aquamarine;
+   
+}
+
+.about__app-button__store a {
+    color: #eee;
+    text-decoration: none;
+}
+
+/*-------------------book------------------*/
+
+.main__book{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    " heading heading heading heading heading heading"
+    
+    " form form form form form form "
+    " card card card card card card "
+    "app app app appbutton appbutton appbutton"
+  
+   ;
+    
+    
+    
+   
+}
+
+.main__heading{
+    grid-area: heading;
+    display: flex;
+    justify-content: center;
+    background-color: silver;
+   
+}
+
+.main_book_form{
+    grid-area: form;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    background-color: silver;
+    padding-bottom: 1rem;
+    font-size: larger;
+    font-weight: bold;
+    
+
+}
+
+.main_book_form input{
+    font-size: large;
+    background-color: #eee;
+}
+
+input[type=date] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    border-radius: 20px;
+}
+
+select{
+    padding: 5px;
+    font-size: medium;
+    background-color: #eee;
+    border: #eee solid 1px;
+    border-radius: 20px;
+
+}
+
+input[type=submit] {
+    padding:7px 15px; 
+    background:black; 
+    color: #eee;
+    border: none;
+    cursor:pointer;
+    
+    border-radius: 20px; 
+}
+
+input[type=submit]:hover{
+    background-color: rgb(84, 82, 82);
+    box-shadow: 2px 2px 2px aquamarine;
+}
+
+
+.card {
+    grid-area: card;
+    grid-column: auto / span 2;
+    background-color: rgb(73, 72, 72);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    
+    
+}
+
+.card img{
+    
+    
+    box-shadow: grey 5px 5px 5px;
+}
+
+.card button{
+    background-color: black;
+    border-radius: 20px;
+    border: black solid 1px ;
+    padding: .5rem 1rem;  
+}
+
+.card button a {
+    color: #eee;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.card button:hover{
+    
+    background-color:gray;
+    height: 50%;
+    box-shadow: 2px 2px 2px aquamarine;
+    border: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .wrapper{
+        
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+        
+    }
+
+    .header{
+        flex-direction: column;
+        
+    }
+    
+    .main_heading{
+        text-align: center;
+        font-size: large;
+    }
+
+    .header__navi{
+       flex-direction: column;
+       justify-content: center;
+       align-self: center;
+       gap: .5rem;
+       margin-top: .5rem;
+    }
+
+    .header__navi__link{
+        color: aquamarine;
+        background-color: black;
+        text-decoration: none;
+        font-size: medium;
+        padding: .3rem .8rem;
+        
+        border-radius: 20px;
+    }
+
+    main{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .main__app-button{
+        padding: 1rem;
+    }
+
+    .footer{
+        flex-direction: column;
+        background-image: none;
+        background-color: grey;
+        text-align: center;
+        
+        
+    }
+
+    .footer__logo{
+        max-width: 15rem;
+    }
+
+    /*-------- about ----------*/
+
+   .main-about{
+        
+        display: flex;
+        flex-direction: column;
+       
+        
+    }
+    .rooms, .fitness, .dining{
+    padding: 0;
+    }
+
+
+    .rooms__pics, .fitness__pics, .dining-pics{
+        display: flex;
+        flex-direction: column;
+        
+    
+    }
+
+    .rooms, .fitness, .dining p, h2{
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    
+
+    .about__app{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__app-button{
+        padding: 1rem;
+    }
+
+    /*--------------book----------*/
+
+    .about-heading{
+        text-align: center;
+        font-size: large;
+    }
+
+    .main__book{
+        
+        display: flex;
+        flex-direction: column;
+        }
+    
+    .main_book_form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: medium;
+        padding: 0;
+    }    
+}
